@@ -1,0 +1,156 @@
+/* Estilos Generales */
+/* Define los estilos básicos que se aplican a todo el cuerpo del documento */
+body {
+    font-family: Arial, sans-serif; /* Establece la fuente del texto en Arial o una fuente sans-serif alternativa */
+    background-color: #f0f0f0; /* Color de fondo general de la página */
+    color: #333; /* Color del texto principal */
+    margin: 0; /* Elimina el margen predeterminado del navegador */
+    padding: 0; /* Elimina el padding predeterminado del navegador */
+}
+
+/* Banner Superior */
+/* Estiliza el área de banner que generalmente se usa para el encabezado o presentación */
+.banner {
+    background-image: url('background.jpg'); /* Imagen de fondo para el banner */
+    background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
+    text-align: center; /* Centra el texto horizontalmente */
+    padding: 50px 20px; /* Espaciado interno (padding) en el banner */
+    color: white; /* Color del texto en el banner */
+    display: flex; /* Usa Flexbox para la disposición de elementos */
+    align-items: center; /* Alinea los elementos verticalmente en el centro */
+    justify-content: center; /* Alinea los elementos horizontalmente en el centro */
+    flex-direction: column; /* Coloca los elementos en una columna */
+}
+
+.logo {
+    max-width: 150px; /* Limita el ancho máximo del logo */
+    height: auto; /* Mantiene la proporción original de la imagen del logo */
+}
+
+.banner h1 {
+    margin: 10px 0; /* Márgenes superior e inferior del título */
+}
+
+/* Menú de Navegación */
+/* Estiliza el menú de navegación en la parte superior del sitio */
+nav ul {
+    list-style-type: none; /* Elimina los puntos de la lista */
+    background-color: #007ACC; /* Color de fondo del menú */
+    padding: 10px; /* Espaciado interno (padding) del menú */
+    text-align: center; /* Centra el texto de los elementos del menú */
+    margin: 0; /* Elimina el margen alrededor del menú */
+}
+
+nav ul li {
+    display: inline; /* Muestra los elementos de la lista en línea */
+    margin: 0 15px; /* Espaciado horizontal entre los elementos del menú */
+}
+
+nav ul li a {
+    color: white; /* Color del texto del enlace */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    font-weight: bold; /* Establece el texto en negrita */
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Subraya el texto cuando el usuario pasa el ratón sobre el enlace */
+}
+
+/* Secciones */
+/* Define los estilos para las secciones principales del contenido */
+section {
+    padding: 20px; /* Espaciado interno (padding) de las secciones */
+    margin: 20px 0; /* Espaciado externo (margin) superior e inferior de las secciones */
+    background-color: white; /* Color de fondo de las secciones */
+    border-radius: 5px; /* Bordes redondeados para las secciones */
+}
+
+section h2 {
+    color: #007ACC; /* Color del texto de los encabezados h2 */
+    border-bottom: 2px solid #007ACC; /* Línea de borde en la parte inferior del encabezado */
+    padding-bottom: 10px; /* Espaciado interno (padding) inferior del encabezado */
+    margin-bottom: 15px; /* Espaciado externo (margin) inferior del encabezado */
+}
+
+/* Formulario de Cotización */
+/* Estiliza los elementos del formulario para la cotización */
+form input, form textarea {
+    width: 100%; /* Hace que los campos del formulario ocupen el ancho completo del contenedor */
+    padding: 10px; /* Espaciado interno (padding) de los campos del formulario */
+    margin: 10px 0; /* Espaciado externo (margin) superior e inferior de los campos del formulario */
+    border: 1px solid #ccc; /* Borde gris claro alrededor de los campos del formulario */
+    border-radius: 5px; /* Bordes redondeados para los campos del formulario */
+}
+
+form input[type="submit"] {
+    background-color: #007ACC; /* Color de fondo del botón de envío del formulario */
+    color: white; /* Color del texto del botón de envío */
+    border: none; /* Elimina el borde predeterminado del botón */
+    cursor: pointer; /* Cambia el cursor a una mano al pasar sobre el botón */
+}
+
+form input[type="submit"]:hover {
+    background-color: #005f99; /* Color de fondo del botón cuando el usuario pasa el ratón sobre él */
+}
+
+/* Mapa */
+/* Estiliza el contenedor del mapa */
+#mapa {
+    margin-top: 20px; /* Espaciado externo (margin) superior del contenedor del mapa */
+}
+
+/* Sección: Diseña tu Cuento */
+/* Estiliza el contenedor de la sección para diseñar el cuento */
+#diseña-cuento {
+    padding: 20px; /* Espaciado interno (padding) de la sección */
+    margin: 20px 0; /* Espaciado externo (margin) superior e inferior de la sección */
+    background-color: white; /* Color de fondo de la sección */
+    border-radius: 5px; /* Bordes redondeados para la sección */
+}
+
+#diseña-cuento h2 {
+    color: #007ACC; /* Color del texto del encabezado */
+    border-bottom: 2px solid #007ACC; /* Línea de borde en la parte inferior del encabezado */
+    padding-bottom: 10px; /* Espaciado interno (padding) inferior del encabezado */
+    margin-bottom: 15px; /* Espaciado externo (margin) inferior del encabezado */
+}
+
+/* Estiliza los elementos del formulario de "Diseña tu Cuento" */
+#diseña-cuento form {
+    margin-bottom: 20px; /* Espaciado inferior del formulario */
+}
+
+#diseña-cuento form label {
+    display: block; /* Hace que las etiquetas ocupen toda la línea */
+    margin-top: 10px; /* Espaciado superior de las etiquetas */
+}
+
+#diseña-cuento form input {
+    width: calc(100% - 22px); /* Ajusta el ancho del campo de entrada */
+    padding: 10px; /* Espaciado interno (padding) de los campos del formulario */
+    margin: 5px 0; /* Espaciado externo (margin) superior e inferior de los campos del formulario */
+    border: 1px solid #ccc; /* Borde gris claro alrededor de los campos del formulario */
+    border-radius: 5px; /* Bordes redondeados para los campos del formulario */
+}
+
+#diseña-cuento form button {
+    background-color: #007ACC; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    border: none; /* Elimina el borde predeterminado del botón */
+    padding: 10px 20px; /* Espaciado interno (padding) del botón */
+    border-radius: 5px; /* Bordes redondeados para el botón */
+    cursor: pointer; /* Cambia el cursor a una mano al pasar sobre el botón */
+    font-size: 16px; /* Tamaño de la fuente del botón */
+}
+
+#diseña-cuento form button:hover {
+    background-color: #005f99; /* Color de fondo del botón cuando el usuario pasa el ratón sobre él */
+}
+
+/* Estilo para el área del cuento generado */
+#cuento-generado {
+    padding: 20px; /* Espaciado interno (padding) del área del cuento */
+    background-color: #f9f9f9; /* Color de fondo del área del cuento */
+    border: 1px solid #ddd; /* Borde gris claro alrededor del área del cuento */
+    border-radius: 5px; /* Bordes redondeados para el área del cuento */
+}

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- Define el tipo de documento como HTML5 y establece el idioma de la página a español. -->
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Define la codificación de caracteres como UTF-8, lo que permite utilizar casi todos los caracteres en el texto, incluyendo acentos y símbolos especiales. -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Asegura que la página sea responsive al establecer que el ancho de la página se ajuste al ancho de la pantalla del dispositivo (para dispositivos móviles). -->
+
+    <title>Consulta de Cotización</title>
+    <!-- Establece el título de la página, que aparecerá en la pestaña del navegador. -->
+
+    <link rel="stylesheet" href="styles.css">
+    <!-- Vincula un archivo externo de estilos CSS llamado "styles.css", que define el aspecto visual de la página. -->
+
+    <script src="consulta.js" defer></script>
+    <!-- Vincula un archivo JavaScript externo llamado "consulta.js". El atributo "defer" asegura que el script se cargue y ejecute después de que el contenido HTML esté completamente cargado. -->
+
+    <style>
+  
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+        h2, h3 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        table th, table td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        table th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        table tr:hover {
+            background-color: #f1f1f1;
+        }
+        .btn {
+            display: block;
+            width: 100%;
+            max-width: 200px;
+            margin: 0 auto;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<!-- Cierre de la sección <head> que contiene la información meta y los enlaces a recursos externos como CSS y JavaScript. -->
+
+<body>
+    <!-- Inicio del cuerpo de la página, donde se define el contenido visible para el usuario. -->
+    
+    <div class="container">
+        <!-- Un contenedor con la clase "container" que agrupa todo el contenido dentro de un área definida por los estilos CSS. -->
+        
+        <h2>Consulta de Cotización</h2>
+        <!-- Un encabezado de nivel 2 que muestra el título "Consulta de Cotización" en la página. -->
+        
+        <!-- Datos Personales -->
+        <h3>Datos Personales</h3>
+        <!-- Un encabezado de nivel 3 que indica la sección de "Datos Personales". -->
+
+        <table>
+            <!-- Inicio de una tabla HTML para mostrar los datos personales. -->
+            
+            <thead>
+                <!-- Sección de la tabla que contiene los encabezados de las columnas. -->
+                
+                <tr>
+                    <th>Nombres</th>
+                    <th>Ciudad</th>
+                    <th>Dirección</th>
+                    <th>Teléfono</th>
+                </tr>
+                <!-- Define las columnas de la tabla: Nombres, Ciudad, Dirección y Teléfono. -->
+            </thead>
+            
+            <tbody id="datos-personales"></tbody>
+            <!-- El cuerpo de la tabla donde se llenarán los datos personales dinámicamente mediante JavaScript. 
+            Se le asigna el identificador "datos-personales" para poder acceder a esta sección desde el script. -->
+        </table>
+        
+        <!-- Productos Seleccionados -->
+        <h3>Productos Seleccionados</h3>
+        <!-- Un encabezado de nivel 3 que indica la sección de "Productos Seleccionados". -->
+        
+        <table>
+            <!-- Inicio de una tabla HTML para mostrar los productos seleccionados. -->
+            
+            <thead>
+                <!-- Sección de la tabla que contiene los encabezados de las columnas. -->
+                
+                <tr>
+                    <th>Producto</th>
+                    <th>Valor Unitario</th>
+                    <th>Cantidad</th>
+                    <th>Total</th>
+                </tr>
+                <!-- Define las columnas de la tabla: Producto, Valor Unitario, Cantidad y Total. -->
+            </thead>
+            
+            <tbody id="productos-seleccionados"></tbody>
+            <!-- El cuerpo de la tabla donde se llenarán los productos seleccionados dinámicamente mediante JavaScript.
+            Se le asigna el identificador "productos-seleccionados" para que el script pueda insertar datos aquí. -->
+        </table>
+        
+        <!-- Botón para regresar -->
+        <a href="index.html" class="btn">Volver al Formulario</a>
+        <!-- Un enlace que redirige al archivo "index.html". Tiene la clase "btn" que presumiblemente le da un estilo de botón a través del CSS. -->
+        
+    </div>
+    <!-- Cierre del div contenedor principal. -->
+</body>
+<!-- Cierre del cuerpo de la página. -->
+</html>
+<!-- Cierre del documento HTML. -->
+
